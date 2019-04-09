@@ -9,10 +9,11 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if (!msg.content.startsWith(config.prefix) || msg.author.bot) return;
-    
-    if (msg.content.startsWith(config.prefix + 'ping')) {
-         msg.reply('pong');
+
+    if (msg.content.startsWith(config.prefix + 'pray')) {
+         msg.reply('Your prayers have been heard... Gaybel is pleased!');
     }
  });
+
 
 client.login(config.TOKEN);
