@@ -1,4 +1,19 @@
+/*
+     Mighty Abel Believer, Enforcing Leader
+     Discord Bot, written in JavaScript
+     By Curtis Chung
+     Started April 19, 2019
+*/
 
+/* 
+IDEAS FOR IMPLEMENTATION:
+!fortune feature
+
+SQL user server, point system for praying
+can redeem for rewards (mystery skin, buy food, etc)
+
+
+*/
 const Discord = require('discord.js');
  const client = new Discord.Client();
 const config = require("./config.json");
@@ -6,7 +21,7 @@ const random = require("./random.js");
 const constants = require("./constants.js");
 
 
- 
+//
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
  });
@@ -25,5 +40,5 @@ client.on('message', msg => {
  });
 
 
-
+//Discord Login Token
 client.login(config.TOKEN);
