@@ -8,10 +8,11 @@
 /* 
 IDEAS FOR IMPLEMENTATION:
 !fortune feature
+     - Super bad odds of getting lucky
+     - possibly give points once point system is implemented
 
 SQL user server, point system for praying
 can redeem for rewards (mystery skin, buy food, etc)
-
 
 */
 const Discord = require('discord.js');
@@ -21,7 +22,7 @@ const random = require("./random.js");
 const constants = require("./constants.js");
 
 
-//
+
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
  });
@@ -30,7 +31,7 @@ client.on('message', msg => {
     if (!msg.content.startsWith(config.prefix) || msg.author.bot) {return;}
 
     if (msg.content.startsWith(config.prefix + 'pray')) {
-         msg.reply('Your prayers have been heard... Lord Gaybel is pleased!');
+         msg.reply('Your prayers have been heard... Lord Gaybel is pleased!'); 
     }
     
     if(msg.content.startsWith(config.prefix + "fortune")) {
