@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgentTripleCCC/MABEL-BOT.git"
+    "url": "git+https://github.com/curtischung/MABEL-BOT.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AgentTripleCCC/MABEL-BOT/issues"
+    "url": "https://github.com/curtischung/MABEL-BOT/issues"
   },
-  "homepage": "https://github.com/AgentTripleCCC/MABEL-BOT#readme"
+  "homepage": "https://github.com/curtischung/MABEL-BOT#readme"
 }
