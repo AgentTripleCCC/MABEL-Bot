@@ -58,8 +58,7 @@ client.on('message', message => {
 
      if (!command) //checks if the command/alias exists
      {
-          message.reply("Command does not exist, check your spelling silly goose.");
-          return;
+          return message.reply("Command does not exist, check your spelling silly goose.");;
      }
 
      try {
