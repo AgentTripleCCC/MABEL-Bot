@@ -5,9 +5,12 @@
      Started April 19, 2019
 */
 /*Currently working on:
-     - Help command
-          - still need to finish 
-     - Aliases (not started)
+     - *nothing*
+
+Plan to Start:
+!react *args
+ - React with a gif pulled from somewhere based on a certain category
+ - users can propose gifs to be in category
 
 
 /* 
@@ -16,6 +19,8 @@ IDEAS FOR IMPLEMENTATION:
      - Super bad odds of getting lucky
      - possibly give points once point system is implemented
 
+!roast feature
+     - Randomnly generate insult towards @user
 SQL user server, point system for praying
 can redeem for rewards (mystery skin, buy food, etc)
 
@@ -58,14 +63,14 @@ client.on('message', message => {
 
      if (!command) //checks if the command/alias exists
      {
-          return message.reply("Command does not exist, check your spelling silly goose.");;
+          return message.reply("Command does not exist, check your spelling silly goose.");
      }
 
      try {
           command.execute(message, args);
      } catch (error) {
           console.error(error);
-          message.channel.send("error");
+          message.channel.send("yes");
      }
 
  });
