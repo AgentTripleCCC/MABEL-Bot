@@ -8,10 +8,6 @@
      - *nothing*
 
 Plan to Start:
-!react *args
- - React with a gif pulled from somewhere based on a certain category
- - users can propose gifs to be in category
-
 
 /* 
 IDEAS FOR IMPLEMENTATION:
@@ -21,6 +17,11 @@ IDEAS FOR IMPLEMENTATION:
 
 !roast feature
      - Randomnly generate insult towards @user
+
+!react *args
+ - React with a gif pulled from somewhere based on a certain category
+ - users can propose gifs to be in category
+
 SQL user server, point system for praying
 can redeem for rewards (mystery skin, buy food, etc)
 
@@ -52,7 +53,7 @@ client.on('ready', () => {
  });
 
  //Listener Event which runs whenever a message with prefix '!' is received
-client.on('message', message => {
+client.on('message', async message => {
 
      if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 

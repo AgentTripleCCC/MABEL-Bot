@@ -11,6 +11,6 @@ module.exports = {
         const max = args;
         const rand = Math.random() * (max - min) + min;
         
-        return message.channel.send(message.member.user.username + " rolled a " + Math.trunc(rand) + "!");
+        return message.channel.send(`${message.member.user.username} rolled a ${Math.trunc(rand)}!`);
     }
 }
