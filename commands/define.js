@@ -5,13 +5,13 @@ const fetch = require('node-fetch');
 const trim = (str, max) => (str.length > max ? `${str.slice(0, max - 3)}...` : str);
 
 module.exports = {
-    name: 'urban',
+    name: 'define',
     description: 'Find the urban dictionary definition to any words',
     async execute(message, args) 
     {
         if(!args.length)
         {
-            return message.channel.send('Lord Gaybel needs a word to define.');
+            return message.channel.send('Lord Gabel needs a word to define.');
         }
 
         const query = querystring.stringify({term: args.join(' ')});

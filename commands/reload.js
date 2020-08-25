@@ -11,7 +11,7 @@ module.exports = {
                 || message.client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
         if(!command) {
-            return message.channel.send("Lord Gaybel does not like jokes, please give him a valid command to review.");
+            return message.channel.send("Lord Gabel does not like jokes, please give him a valid command to review.");
         }
         delete require.cache[require.resolve(`./${command.name}.js`)];
 

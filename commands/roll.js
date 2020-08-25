@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         if (!args.length || isNaN(args))
         {
-            return message.reply("Lord Gaybel would like valid arguments.");
+            return message.reply("Lord Gabel would like valid arguments.");
         }
     
         const min = 0;
